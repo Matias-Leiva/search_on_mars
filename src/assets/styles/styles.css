@@ -1,0 +1,135 @@
+/* Layout */
+.box_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  max-width: 100vw;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+.header {
+  max-width: inherit;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* HOME */
+.box_home {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.space_mars {
+  width: 100%;
+  height: inherit;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 998px) {
+  .box_home {
+    max-width: 100%;
+  }
+
+  .space_mars {
+    display: none;
+  }
+}
+
+.footer {
+  height: 50px;
+  background: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.footer_text {
+  font-size: 15px;
+  font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
+}
+
+/* NOT FOUND */
+.not_found {
+  background-image: url('../img/404.png');
+  background-position: center;
+  background-size: cover;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.go_back{
+  background-color: #302b63;
+  text-decoration: none;
+  text-emphasis: none;
+  color:aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Rovers */
+.container_rovers {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* Rovers Images */
+.box_rovers_images {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.div_not_image {
+  width: 100%;
+  height: inherit;
+  align-items: flex-start;
+}
+
+.not_image_found {
+  width: 100%;
+}
+
+.not_images_text {
+  position: relative;
+  bottom: 40px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: #0f0c29;
+  font-family: Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Pagination */
+.justify_center {
+  display: flex;
+  justify-content: center;
+}
+
+/* FavouritesSearch */
+.div_no_favourites{
+  margin: 10px 20px;
+  font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 30px;
+}
